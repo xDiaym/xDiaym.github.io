@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.main {
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote {
+  text-align: center;
+  color: #000;
+  background-color: #ca4246;
+  text-transform: uppercase;
+  font-size: 8vh;
+  animation: quote-text-animation 1s;
+}
+
+.author {
+  font-size: 2vh;
+  color: #f3f3f5;
+  text-transform: uppercase;
+}
