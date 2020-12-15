@@ -4,11 +4,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main {
   height: 100%;
-  background-color: #222;
+  background-color: #222222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +27,25 @@ body {
   background-color: #ca4246;
   text-transform: uppercase;
   font-size: 8vh;
-  animation: quote-text-animation 1s;
+}
+
+.animated-text {
+  color: #f3f3f5;
+  background-color: #222222;
+  text-shadow: 4px 4px 16px #7fff00;
+  animation: 3s linear infinite alternate neon-pulsar;
+}
+
+@keyframes neon-pulsar {
+  0% {
+    text-shadow: 4px 4px 16px #7fff00;
+  }
+  50% {
+    text-shadow: 4px 4px 16px #ff1493;
+  }
+  100% {
+    text-shadow: 4px 4px 16px #8a2ae3;
+  }
 }
 
 .author {
